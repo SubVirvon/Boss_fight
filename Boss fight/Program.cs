@@ -14,6 +14,9 @@ namespace Boss_fight
             const string CommandHeal = "2";
             const string CommandFireSwordHit = "3";
             const string CommandChainSwordHit = "4";
+            const string EnemyStateVariant1 = "Куча слизи и костей";
+            const string EnemyStateVariant2 = "Куча покрыта слизью";
+            const string EnemyStateVariant3 = "Куча покрыта щитом из костей";
             int swordStrength = 55;
             int healStrength = 100;
             int fireSwordStrength = 145;
@@ -26,9 +29,6 @@ namespace Boss_fight
             int enemyHealth = 700;
             int healCoolDown = 5;
             int healCoolDownWait = 0;
-            const string EnemyStateVariant1 = "Куча слизи и костей";
-            const string EnemyStateVariant2 = "Куча покрыта слизью";
-            const string EnemyStateVariant3 = "Куча покрыта щитом из костей";
             string enemyState = EnemyStateVariant1;
             Random random = new Random();
             int randomNumber;
