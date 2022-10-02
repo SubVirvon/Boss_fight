@@ -37,7 +37,6 @@ namespace Boss_fight
             bool playerIsHit = false;
             bool gameIsEnd = false;
 
-
             Console.WriteLine("Вы храбрый воин с мечом. Перед вами ужасная агрессивная куча слизи с костями. Вам предстоит убить ее.");
             Console.ReadKey();
             Console.Clear();
@@ -84,6 +83,7 @@ namespace Boss_fight
                         {
                             Console.WriteLine("Вы не можете все время бегать от боя, подождите еще " + healCoolDownWait + " хода");
                         }
+
                         playerIsHit = false;
                         break;
                     case CommandFireSwordHit:
