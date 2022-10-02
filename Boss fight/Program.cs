@@ -10,13 +10,6 @@ namespace Boss_fight
     {
         static void Main(string[] args)
         {
-            const string CommandNormalSwordHit = "1";
-            const string CommandHeal = "2";
-            const string CommandFireSwordHit = "3";
-            const string CommandChainSwordHit = "4";
-            const string EnemyStateVariant1 = "Куча слизи и костей";
-            const string EnemyStateVariant2 = "Куча покрыта слизью";
-            const string EnemyStateVariant3 = "Куча покрыта щитом из костей";
             int swordStrength = 55;
             int healStrength = 100;
             int fireSwordStrength = 145;
@@ -29,7 +22,7 @@ namespace Boss_fight
             int enemyHealth = 700;
             int healCoolDown = 5;
             int healCoolDownWait = 0;
-            string enemyState = EnemyStateVariant1;
+            string enemyState = "Куча слизи и костей";
             Random random = new Random();
             int randomNumber;
             int minValue = 1;
@@ -46,6 +39,14 @@ namespace Boss_fight
 
             while (gameIsEnd == false)
             {
+                const string CommandNormalSwordHit = "1";
+                const string CommandHeal = "2";
+                const string CommandFireSwordHit = "3";
+                const string CommandChainSwordHit = "4";
+                const string EnemyStateVariant1 = "Куча слизи и костей";
+                const string EnemyStateVariant2 = "Куча покрыта слизью";
+                const string EnemyStateVariant3 = "Куча покрыта щитом из костей";
+
                 Console.SetCursorPosition(0, 20);
                 Console.Write("Ваше здоровье: " + playerHealth + "hp\nЗдоровье врага: " + enemyHealth + "hp\nСостояние врага: " + enemyState);
                 Console.SetCursorPosition(0, 0);
